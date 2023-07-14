@@ -14,7 +14,7 @@ func (app *snippetBox) routes() *http.ServeMux {
 
 	// routes handler
 	mux.HandleFunc("/", app.home)
-	mux.HandleFunc("/snippet", app.snippetView)
+	mux.HandleFunc("/snippet/view", app.snippetView)
 	mux.HandleFunc("/snippet/create", app.snippetCreate)
 
 	return mux
